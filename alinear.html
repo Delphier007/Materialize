@@ -21,7 +21,18 @@
       height: 15rem;
       color: Teal;
     }
-  
+    .noMaterial {
+      background-color: teal;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .flexible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
   </style>
 
 </head>
@@ -54,15 +65,30 @@
     </section>
     <section class="section cyan lighten-3 valign-wrapper alinear">
       <!-- Por qué no funciona aquí??? Es cuando el texto no llena una línea.  -->
-      <p class="center-align">Lorem ipsum dolor sit amet consectetuadfadf</p>
+      <p class="center-align">UNO - Estamos alineando al centro</p>
     </section>
-    <section class="section cyan lighten-2 valign-wrapper alinear">
+    <section class="section cyan lighten-2 alinear flexible">
       <!-- el elmento de bloque lo convierte en in-line??? -->
-      <p class="center-align green">Lorem ipsum dolor sit amet consectetur</p>
+    <p class="center-align green">DOS - Lo solucionamos con FLEXBOX</p>
     </section>
     <section class="section cyan lighten-1 alinear">
       <!-- ahora no pasa cuando quitamos la clase valign-wrapper -->
-      <p class="center-align green">Lorem ipsum dolor sit amet consectetur</p>
+    <p class="center-align green">TRES - Funciona al quitar la clase valign-wrapper</p>
+    </section>
+
+    <section class="section">
+      <div class="noMaterial">
+        NO MATERIAL
+      </div>
+    </section>
+
+    <!-- FLOATS -->
+    <h4>FLOATS</h4>
+    <section class="section black">
+      <article class="yellow white-text right">UNO</article>
+      <article class="blue white-text">DOS</article>
+      <article class="pink white-text right">TRES</article>
+
     </section>
 
   </main>
