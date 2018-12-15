@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Materialize CSS. Framework</title>
+  <style>
+    .volver {
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .alinear {
+      height: 15rem;
+      color: Teal;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+
+  <header class="container section">
+    <section class="teal white-text">
+      <!-- CAMBIAR -->
+      <h1 class="center">ALINEAR CONTENIDO</h1>
+
+      <i class="material-icons tiny">arrow_back</i>
+      <a class="volver white-text" href="index.html">Índice<a />
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="section valign-wrapper yellow">
+      <h4>Contenido alineado verticalmente</h4>
+    </section>
+
+    <section class="section cyan valign-wrapper alinear">
+      <p class="left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum inventore corrupti officiis, ut reiciendis consequatur fuga a sed eius iure laboriosam ratione et voluptate exercitationem!</p>
+    </section>
+    <section class="section cyan lighten-5 valign-wrapper alinear">
+      <p class="right-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sequi atque quaerat facilis similique consequuntur aliquam consequatur modi reprehenderit saepe quis itaque, neque eos alias!</p>
+    </section>
+    <section class="section cyan lighten-4 valign-wrapper alinear">
+      <p class="center-align">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste perferendis totam incidunt debitis veritatis omnis, molestiae repudiandae nam nulla tempore velit ducimus corrupti, unde aliquam!</p>
+    </section>
+    <section class="section cyan lighten-3 valign-wrapper alinear">
+      <!-- Por qué no funciona aquí??? Es cuando el texto no llena una línea.  -->
+      <p class="center-align">Lorem ipsum dolor sit amet consectetuadfadf</p>
+    </section>
+    <section class="section cyan lighten-2 valign-wrapper alinear">
+      <!-- el elmento de bloque lo convierte en in-line??? -->
+      <p class="center-align green">Lorem ipsum dolor sit amet consectetur</p>
+    </section>
+    <section class="section cyan lighten-1 alinear">
+      <!-- ahora no pasa cuando quitamos la clase valign-wrapper -->
+      <p class="center-align green">Lorem ipsum dolor sit amet consectetur</p>
+    </section>
+
+  </main>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
